@@ -18,6 +18,8 @@ install:
 	@crontab mycron
 	@rm mycron
 	@echo "🎉 Installed successfully! The IP will display on next boot."
+	@echo "🚀 Running a test now... (this is how it will show on boot)"
+	@/usr/bin/python3 $(PYTHON_SCRIPT)
 
 uninstall:
 	@echo "Removing cron job..."
